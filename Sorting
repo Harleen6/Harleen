@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.Arrays;
+class sort
+{
+public static void main(String args[])throws IOException
+{
+int a[];
+int i,n;
+BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the number of elements you want to enter in the array");
+n=Integer.parseInt(buf.readLine());
+a=new int[n];
+System.out.println("Enter the elements:");
+for(i=0;i<n;i++)
+{
+a[i]=Integer.parseInt(buf.readLine());
+}
+Arrays.sort(a);
+System.out.println("Sorted Array: "+Arrays.toString(a)); 
+}
+}
